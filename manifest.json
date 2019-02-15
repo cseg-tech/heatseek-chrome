@@ -1,6 +1,6 @@
 {
-    "name": "Getting Started Example",
+    "name": "Heat Seek Sensor Configuration",
     "version": "1.0",
-    "description": "Build an Extension!",
+    "description": "Configure your Heat Seek sensor using this handy Chrome extension.",
     "manifest_version": 2
   }
