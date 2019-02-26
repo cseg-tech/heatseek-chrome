@@ -1,14 +1,30 @@
 {
+    // Referencing https://developer.chrome.com/extensions/manifest
+
+    // Required
+    "manifest_version": 2,
     "name": "Heat Seek Sensor Configuration",
     "version": "1.0",
+
+    // Recommended
+    // "default_locale": "en",
     "description": "Configure your Heat Seek sensor using this handy Chrome extension.",
-    "background": {
-      "scripts": ["background.js"],
-      "persistent": false
-    },
-    "permissions": ["declarativeContent", "storage"],
-    "page_action": {
+    // "icons": {...},
+
+    // Pick one
+    "browser_action": {
+      "default_title": "Heat Seek",
       "default_popup": "index.html"
     },
-    "manifest_version": 2
+    // "page_action": {
+    //   "default_popup": "index.html"
+    // },
+
+    // Optional
+    "background": {
+      "scripts": ["heatseek_popup.js"],
+      "persistent": false
+    },
+
+    "permissions": ["storage"]
   }
