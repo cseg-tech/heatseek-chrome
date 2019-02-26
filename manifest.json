@@ -9,7 +9,11 @@
     // Recommended
     // "default_locale": "en",
     "description": "Configure your Heat Seek sensor using this handy Chrome extension.",
-    // "icons": {...},
+    "icons": {
+      "16": "images/icons/16.png",
+      "48": "images/icons/48.png",
+      "128":"images/icons/128.png"
+    },
 
     // Pick one
     "browser_action": {
