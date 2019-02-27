@@ -6,6 +6,12 @@ function loginTab() {
   });
 }
 
+function sensorTab() {
+  var sensorURL = chrome.extension.getURL('sensor.html');
+  chrome.tabs.create({url: sensorURL});
+}
+
 document.addEventListener('DOMContentLoaded', function() {
-  document.getElementById('heatseek-app').addEventListener('click', loginTab);
+  document.getElementById('login-button').addEventListener('click', loginTab);
+  document.getElementById('sensor-button').addEventListener('click', sensorTab);
 });
