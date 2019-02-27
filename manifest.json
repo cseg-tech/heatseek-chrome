@@ -25,10 +25,10 @@
     // },
 
     // Optional
-    "background": {
-      "scripts": ["js/popup.js"],
-      "persistent": false
-    },
+    // "background": {
+    //   "scripts": ["js/background.js"],
+    //   "persistent": false
+    // },
 
-    "permissions": ["storage"]
+    "permissions": ["tabs"]
   }
