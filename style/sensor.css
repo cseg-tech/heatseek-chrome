@@ -25,6 +25,7 @@ p {
 	transition: 0.5s;
 	color: #fff;
 	font-family: 'IBM Plex Mono', monospace;
+	font-size: 12px;
 }
 
 #consoleClose {
@@ -42,7 +43,7 @@ p {
 .consoleOutput {
 	padding-left: 15px;
 	padding-right: 15px;
-	height: 85%;
+	height: 80%;
 	overflow: auto;
 }
 
