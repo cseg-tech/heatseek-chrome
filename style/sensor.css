@@ -52,7 +52,9 @@ p {
 	padding-top: 10px;
 }
 
-.consoleForm input, textarea, .form-control:focus {
+.consoleForm input, 
+.consoleForm textarea, 
+.consoleForm .form-control:focus {
 	color: #fff;
 	background-color: #252729;
 }

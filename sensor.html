@@ -94,8 +94,102 @@
 
       <!-- Sensor setup -->
       <div class="container">
-        <div class="row">
-          <h1>Set Up Your Sensor</h1>
+        <div class="row mt-4">
+          <div class="col-lg-9">
+
+            <h1>Set Up Your Sensor</h1>
+            Please do not connect your sensor yet. (We scan for COM ports here)
+            <br>
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+
+            <form>
+              <label for="plugCheck">
+                You should've received a Heat Seek Temperature Sensor and a USB cable. Plug in the end of the cable that looks like a phone charger to the side of the sensor. Plug in the other end to your computer. Open the top of the plastic case and press the small reset button on the top.
+              </label>
+              <button class="btn btn-primary" id="plugCheck">I did it!</button>
+            </form>
+
+            Looking for your sensor...
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+
+            <div class="alert alert-success" role="alert">
+              We found your sensor!
+            </div>
+
+            <div class="alert alert-warning" role="alert">
+              We couldn't find your sensor. Disconnect your sensor, refresh the page, and try again.
+            </div>
+
+            Scanning for wifi networks...
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            <form>
+              <!-- WiFi Setup Form -->
+              <div class="form-group">
+                <label for="wifiDropdown">
+                  Let's set up your wifi. Select the name of your wifi network.
+                </label>
+                <select id="wifiDropdown" class="form-control" required>
+                  <option>Bill Wi the Science Fi</option>
+                  <option>Your Neighbor's WiFi</option>
+                  <option>Mom, click here for internet</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="wifiPass">
+                  Enter your wifi password.
+                </label>
+                <input type="password" class="form-control" id="wifiPass" required>
+              </div>
+
+              <div class="form-group">
+                <label>
+                  Are you Human?
+                </label>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="live" value="live" name="liveOrTest">
+                  <label class="form-check-label" for="live">
+                    Yes!
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" id="test" value="test" name="liveOrTest">
+                  <label class="form-check-label" for="test">
+                    No.
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Connect!</button>
+            </form>
+
+            Connecting to wifi...
+            <div class="spinner-border" role="status">
+              <span class="sr-only">Loading...</span>
+            </div>
+            (connect to wifi, set transmit period, confirm connection)
+
+            <div class="alert alert-success" role="alert">
+              You're set up! Install the sensor on the wall.
+            </div>
+
+            <div class="alert alert-warning" role="alert">
+              We couldn't connect to the wifi. Disconnect your sensor, refresh the page, and try again.
+            </div>
+
+          </div>
+          <div class="col-lg-3" id="filler">
+            <style>
+              #filler { background-color: yellow; }
+            </style>
+            keep this space open for console
+          </div>
+          
         </div>
       </div>
 
